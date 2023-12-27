@@ -332,6 +332,25 @@ ADMIN3.Text = "Click AGAIN"
 wait(0.5)
 ADMIN3.Text = "Teams"
 end)
+Decal3.Parent = Frame
+Decal3.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+Decal3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Decal3.BorderSizePixel = 2
+Decal3.Position = UDim2.new(0.34, 0, 0.57, 0)
+Decal3.Size = UDim2.new(0, 110, 0, 40)
+Decal3.Font = Enum.Font.Cartoon
+Decal3.Text = "HD Admin GUI"
+Decal3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Decal3.TextScaled = true
+Decal3.TextSize = 500
+Decal3.TextWrapped = true
+Decal3.MouseButton1Down:connect(function()
+Decal3.Text = "ERROR"
+wait(0.2)
+Decal3.Text = "Click AGAIN"
+wait(0.5)
+Decal3.Text = "HD Admin GUI"
+end)
 
 -- Scripts :
 
