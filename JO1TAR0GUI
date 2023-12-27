@@ -12,6 +12,7 @@ local R6 = Instance.new("TextButton")
 local Stop = Instance.new("TextButton")
 local ADMIN = Instance.new("TextButton")
 local Decal1 = Instance.new("TextButton")
+local Music = Instance.new("TextButton")
 
 --Properties:
 
@@ -218,7 +219,7 @@ Decal1.Parent = Frame
 Decal1.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
 Decal1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Decal1.BorderSizePixel = 2
-Decal1.Position = UDim2.new(0.28, 0, 0.25, 0)
+Decal1.Position = UDim2.new(0.37, 0, 0.25, 0)
 Decal1.Size = UDim2.new(0, 110, 0, 40)
 Decal1.Font = Enum.Font.Cartoon
 Decal1.Text = "Particles 1"
@@ -227,6 +228,21 @@ Decal1.TextScaled = true
 Decal1.TextSize = 500
 Decal1.TextWrapped = true
 Decal1.MouseButton1Down:connect(function()
+
+end)
+Music.Parent = Frame
+Music.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+Music.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Music.BorderSizePixel = 2
+Music.Position = UDim2.new(0.67, 0, 0.25, 0)
+Music.Size = UDim2.new(0, 110, 0, 40)
+Music.Font = Enum.Font.Cartoon
+Music.Text = "Music"
+Music.TextColor3 = Color3.fromRGB(0, 0, 0)
+Music.TextScaled = true
+Music.TextSize = 500
+Music.TextWrapped = true
+Music.MouseButton1Down:connect(function()
 
 end)
 
