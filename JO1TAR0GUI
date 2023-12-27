@@ -5,8 +5,8 @@
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-local ImageLabel = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
+local TextLabel3 = Instance.new("TextLabel")
 local TextLabel2 = Instance.new("TextLabel")
 local R6 = Instance.new("TextButton")
 local Stop = Instance.new("TextButton")
@@ -25,15 +25,6 @@ Frame.BorderSizePixel = 1
 Frame.Position = UDim2.new(0, 0, 0, 0)
 Frame.Size = UDim2.new(0, 400, 0, 300)
 
-ImageLabel.Parent = Frame
-ImageLabel.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
-ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0, 0, 0.13, 0)
-ImageLabel.Size = UDim2.new(0, 400, 0, 215)
-ImageLabel.Image = "rbxassetid://15769473804"
-ImageLabel.ImageTransparency = 0.52
-
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -47,6 +38,20 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 500
 TextLabel.TextWrapped = true
 
+TextLabel3.Parent = Frame
+TextLabel3.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+TextLabel3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel3.BorderSizePixel = 2
+TextLabel3.BackgroundTransparency = 1
+TextLabel3.Position = UDim2.new(0.30, 0, 0.132, 0)
+TextLabel3.Size = UDim2.new(0, 150, 0, 30)
+TextLabel3.Font = Enum.Font.Cartoon
+TextLabel3.Text = "Made By JO****0 (Team JO****0)"
+TextLabel3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel3.TextScaled = true
+TextLabel3.TextSize = 500
+TextLabel3.TextWrapped = true
+
 TextLabel2.Parent = Frame
 TextLabel2.BackgroundColor3 = Color3.fromRGB(245, 205, 48)
 TextLabel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -54,7 +59,7 @@ TextLabel2.BorderSizePixel = 2
 TextLabel2.Position = UDim2.new(0, 0, 0.9, 0)
 TextLabel2.Size = UDim2.new(0, 400, 0, 30)
 TextLabel2.Font = Enum.Font.Cartoon
-TextLabel2.Text = "Update : changed sky and added 2 more sky opinion and changed decal with particles with more buttons. Also changed k00pz sky with new decal id"
+TextLabel2.Text = "Thats Made for 2023 madcity hacking incident"
 TextLabel2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel2.TextScaled = true
 TextLabel2.TextSize = 100
