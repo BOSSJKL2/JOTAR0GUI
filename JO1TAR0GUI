@@ -7,8 +7,11 @@ local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local ImageLabel = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
+local TextLabel2 = Instance.new("TextLabel")
 local R6 = Instance.new("TextButton")
 local Stop = Instance.new("TextButton")
+local ADMIN = Instance.new("TextButton")
+local Decal1 = Instance.new("TextButton")
 
 --Properties:
 
@@ -44,6 +47,19 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 500
 TextLabel.TextWrapped = true
 
+TextLabel2.Parent = Frame
+TextLabel2.BackgroundColor3 = Color3.fromRGB(245, 205, 48)
+TextLabel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2.BorderSizePixel = 2
+TextLabel2.Position = UDim2.new(0, 0, 0.9, 0)
+TextLabel2.Size = UDim2.new(0, 400, 0, 30)
+TextLabel2.Font = Enum.Font.Cartoon
+TextLabel2.Text = "Update : changed sky and added 2 more sky opinion and changed decal with particles with more buttons. Also changed k00pz sky with new decal id"
+TextLabel2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 100
+TextLabel2.TextWrapped = true
+
 R6.Parent = Frame
 R6.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
 R6.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -78,6 +94,137 @@ for i,v in pairs(workspace:GetDescendants()) do
         end
     end
 end)
+ADMIN.Parent = Frame
+ADMIN.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+ADMIN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ADMIN.BorderSizePixel = 2
+ADMIN.Position = UDim2.new(0, 0, 0.25, 0)
+ADMIN.Size = UDim2.new(0, 107, 0, 40)
+ADMIN.Font = Enum.Font.Cartoon
+ADMIN.Text = "Decal 1"
+ADMIN.TextColor3 = Color3.fromRGB(0, 0, 0)
+ADMIN.TextScaled = true
+ADMIN.TextSize = 500
+ADMIN.TextWrapped = true
+ADMIN.MouseButton1Down:connect(function()
+local ID = 15769947250
+ local Skybox = true
+ local particle = true
+ 
+-- DO NOT CHANGE BELOW. UNLESS YOU KNOW WHAT YOU'RE DOING.
+ 
+for i,v in pairs (game.Workspace:GetChildren()) do
+		if v:IsA("Part") then
+			local decal1 =Instance.new("Decal")
+			local decal2 =Instance.new("Decal")
+			local decal3 =Instance.new("Decal")
+			local decal4 =Instance.new("Decal")
+			local decal5 =Instance.new("Decal")
+			local decal6 =Instance.new("Decal")
+			decal1.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			decal2.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			decal3.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			decal4.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			decal5.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			decal6.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			decal1.Parent = v
+			decal2.Parent = v
+			decal3.Parent = v
+			decal4.Parent = v
+			decal5.Parent = v
+			decal6.Parent = v
+			decal1.Face = "Front"
+		    decal2.Face = "Top"
+		    decal3.Face = "Left"
+		    decal4.Face = "Right"
+		    decal5.Face = "Bottom"
+		    decal6.Face = "Back"
+		end
+		end
+			for i,v in pairs (game.Workspace:GetChildren()) do
+			if v:IsA("Model") then
+			for i,z in pairs (v:GetChildren()) do
+			if z:IsA("Part") then
+						local decal7 =Instance.new("Decal")
+			local decal8 =Instance.new("Decal")
+			local decal9 =Instance.new("Decal")
+			local decal10 =Instance.new("Decal")
+			local decal11 =Instance.new("Decal")
+			local decal12 =Instance.new("Decal")
+			decal7.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			decal8.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			decal9.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			decal10.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			decal11.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			decal12.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			decal7.Parent = z
+			decal8.Parent = z
+			decal9.Parent = z
+			decal10.Parent = z
+			decal11.Parent = z
+			decal12.Parent = z
+			decal7.Face = "Front"
+		    decal8.Face = "Top"
+		    decal9.Face = "Left"
+		    decal10.Face = "Right"
+		    decal11.Face = "Bottom"
+		    decal12.Face = "Back"
+			end
+			end
+			end
+			end	
+ 
+ 
+if Skybox == true then
+local sky = Instance.new("Sky")
+sky.Parent = game.Lighting
+sky.SkyboxBk = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxDn = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxFt = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxLf = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxRt = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxUp = "http://www.roblox.com/asset/?id=" ..ID
+end
+ 
+if particle == true then
+for i,v in pairs (game.Workspace:GetChildren()) do
+		if v:IsA("Part") then
+	local particle = Instance.new("ParticleEmitter")
+	particle.Texture = "http://www.roblox.com/asset/?id=" ..ID
+	particle.Parent = v
+	particle.Rate = 200
+	for i,x in pairs (game.Workspace:GetChildren()) do
+		if x:IsA("Model") then
+			for i,z in pairs (x:GetChildren()) do
+			if z:IsA("Part") then
+					local particle2 = Instance.new("ParticleEmitter")
+	particle2.Texture = "http://www.roblox.com/asset/?id=" ..ID
+	particle2.Parent = z
+	particle2.Rate = 200
+				end
+			end
+		end
+		end
+		end
+		end
+end
+end)
+Decal1.Parent = Frame
+Decal1.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+Decal1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Decal1.BorderSizePixel = 2
+Decal1.Position = UDim2.new(0.271, 0, 0.25, 0)
+Decal1.Size = UDim2.new(0, 107, 0, 40)
+Decal1.Font = Enum.Font.Cartoon
+Decal1.Text = "Particles 1"
+Decal1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Decal1.TextScaled = true
+Decal1.TextSize = 500
+Decal1.TextWrapped = true
+Decal1.MouseButton1Down:connect(function()
+
+end)
+
 -- Scripts :
 
 local function QFCS_fake_script() -- Frame.Dragify 
