@@ -5,10 +5,120 @@
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local R6 = Instance.new("TextButton")
+local Stop = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderColor3 = Color3.fromRGB(196, 40, 28)
-Frame.BorderSizePixel = 3
-Frame.Position = UDim2.new(0.536656916, 0, 0.220883533, 0)
-Frame.Size = UDim2.new(0, 356, 0, 433)
+Frame.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 1
+Frame.Position = UDim2.new(0, 0, 0, 0)
+Frame.Size = UDim2.new(0, 400, 0, 300)
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 0, 0.13, 0)
+ImageLabel.Size = UDim2.new(0, 400, 0, 215)
+ImageLabel.Image = "rbxassetid://15769473804"
+ImageLabel.ImageTransparency = 0.52
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 2
+TextLabel.Position = UDim2.new(0.30, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 150, 0, 40)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "JO1TAR0 Gui ClientSide Edition 2"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 500
+TextLabel.TextWrapped = true
+
+R6.Parent = Frame
+R6.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+R6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+R6.BorderSizePixel = 2
+R6.Position = UDim2.new(0.02, 0, 0.07, 0)
+R6.Size = UDim2.new(0, 80, 0, 37)
+R6.Font = Enum.Font.Cartoon
+R6.Text = "R6"
+R6.TextColor3 = Color3.fromRGB(0, 0, 0)
+R6.TextScaled = true
+R6.TextSize = 500
+R6.TextWrapped = true
+R6.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/e2GzxYjD"))()
+end)
+Stop.Parent = Frame
+Stop.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+Stop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Stop.BorderSizePixel = 2
+Stop.Position = UDim2.new(0.76, 0, 0.07, 0)
+Stop.Size = UDim2.new(0, 76, 0, 37)
+Stop.Font = Enum.Font.Cartoon
+Stop.Text = "Stop All Sound"
+Stop.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stop.TextScaled = true
+Stop.TextSize = 500
+Stop.TextWrapped = true
+Stop.MouseButton1Down:connect(function()
+for i,v in pairs(workspace:GetDescendants()) do
+        if v:IsA("Sound") then
+            v.Playing = false
+        end
+    end
+end)
+-- Scripts :
+
+local function QFCS_fake_script() -- Frame.Dragify 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(QFCS_fake_script)()
