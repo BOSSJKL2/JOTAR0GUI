@@ -16,6 +16,7 @@ local Music = Instance.new("TextButton")
 local ADMIN2 = Instance.new("TextButton")
 local Decal2 = Instance.new("TextButton")
 local Music2 = Instance.new("TextButton")
+local ADMIN3 = Instance.new("TextButton")
 
 --Properties:
 
@@ -310,6 +311,25 @@ wait(0.2)
 Music2.Text = "Click AGAIN"
 wait(0.5)
 Music2.Text = "Server Destroyer Old"
+end)
+ADMIN3.Parent = Frame
+ADMIN3.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+ADMIN3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ADMIN3.BorderSizePixel = 2
+ADMIN3.Position = UDim2.new(0, 0, 0.65, 0)
+ADMIN3.Size = UDim2.new(0, 110, 0, 40)
+ADMIN3.Font = Enum.Font.Cartoon
+ADMIN3.Text = "Teams"
+ADMIN3.TextColor3 = Color3.fromRGB(0, 0, 0)
+ADMIN3.TextScaled = true
+ADMIN3.TextSize = 500
+ADMIN3.TextWrapped = true
+ADMIN3.MouseButton1Down:connect(function()
+ADMIN3.Text = "ERROR"
+wait(0.2)
+ADMIN3.Text = "Click AGAIN"
+wait(0.5)
+ADMIN3.Text = "Teams"
 end)
 
 -- Scripts :
