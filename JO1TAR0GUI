@@ -177,32 +177,14 @@ Decal1.TextScaled = true
 Decal1.TextSize = 500
 Decal1.TextWrapped = true
 Decal1.MouseButton1Down:connect(function()
-local ID = 15769947250 -- Change your ID here fellas cXz (Image ID)
- local particle = true
-
--- Don’t change anything down below if you don’t know what are you doing [This script made by cXyzkidd]
-
-if particle == true then
-	for i,v in pairs (game.Workspace:GetChildren()) do
-		if v:IsA("Part") then
-			local particle = Instance.new("ParticleEmitter")
-			particle.Texture = "http://www.roblox.com/asset/?id=" ..ID
-			particle.Parent = v
-			particle.Rate = 200
-			for i,x in pairs (game.Workspace:GetChildren()) do
-				if x:IsA("Model") then
-					for i,z in pairs (x:GetChildren()) do
-						if z:IsA("Part") then
-							local particle2 = Instance.new("ParticleEmitter")
-							particle2.Texture = "http://www.roblox.com/asset/?id=" ..ID
-							particle2.Parent = z
-							particle2.Rate = 200
-						end
-					end
-				end
-			end
-		end
-	end
+local playerLeaderstats = {}
+for i, v in pairs(game.Players:GetChildren()) do
+table.insert(playerLeaderstats, v)
+end
+for i, v in pairs(playerLeaderstats) do
+pe = Instance.new("ParticleEmitter",v.Character.Torso)
+pe.Texture = "http://www.roblox.com/asset/?id=15769947250"
+pe.VelocitySpread = 50
 end
 end)
 Music.Parent = Frame
@@ -299,34 +281,17 @@ Decal2.TextScaled = true
 Decal2.TextSize = 500
 Decal2.TextWrapped = true
 Decal2.MouseButton1Down:connect(function()
-local ID = 15769473804 -- Change your ID here fellas cXz (Image ID)
- local particle = true
-
--- Don’t change anything down below if you don’t know what are you doing [This script made by cXyzkidd]
-
-if particle == true then
-	for i,v in pairs (game.Workspace:GetChildren()) do
-		if v:IsA("Part") then
-			local particle = Instance.new("ParticleEmitter")
-			particle.Texture = "http://www.roblox.com/asset/?id=" ..ID
-			particle.Parent = v
-			particle.Rate = 200
-			for i,x in pairs (game.Workspace:GetChildren()) do
-				if x:IsA("Model") then
-					for i,z in pairs (x:GetChildren()) do
-						if z:IsA("Part") then
-							local particle2 = Instance.new("ParticleEmitter")
-							particle2.Texture = "http://www.roblox.com/asset/?id=" ..ID
-							particle2.Parent = z
-							particle2.Rate = 200
-						end
-					end
-				end
-			end
-		end
-	end
+local playerLeaderstats = {}
+for i, v in pairs(game.Players:GetChildren()) do
+table.insert(playerLeaderstats, v)
+end
+for i, v in pairs(playerLeaderstats) do
+pe = Instance.new("ParticleEmitter",v.Character.Torso)
+pe.Texture = "http://www.roblox.com/asset/?id=15769473804"
+pe.VelocitySpread = 50
 end
 end)
+
 -- Scripts :
 
 local function QFCS_fake_script() -- Frame.Dragify 
