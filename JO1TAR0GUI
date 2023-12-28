@@ -420,9 +420,20 @@ Music4.TextScaled = true
 Music4.TextSize = 500
 Music4.TextWrapped = true
 Music4.MouseButton1Down:connect(function()
-Music4.Text = "IDK WHAT IS THIS"
-wait(1)
-Music4.Text = "????????? ???????????????? ?????????"
+local Lighting = game:GetService("Lighting")
+		local ColorCorrection = Instance.new("ColorCorrectionEffect", Lighting)
+	
+		function zigzag(X) 
+			return math.acos(math.cos(X*math.pi))/math.pi
+		end
+	
+		Counter = 0
+	
+		while wait(0.1) do 
+			ColorCorrection.TintColor = Color3.fromHSV(zigzag(Counter),1,1)
+			Lighting.Ambient = Color3.fromHSV(zigzag(Counter),1,1)
+			Counter += 0.01
+		end
 end)
 TOADROAD.Parent = Frame
 TOADROAD.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
@@ -483,7 +494,7 @@ SKYSPAMMING.Parent = Frame
 SKYSPAMMING.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
 SKYSPAMMING.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SKYSPAMMING.BorderSizePixel = 2
-SKYSPAMMING.Position = UDim2.new(0, 0, 0, 3)
+SKYSPAMMING.Position = UDim2.new(-0.43, 0, 0, 0)
 SKYSPAMMING.Size = UDim2.new(0, 170, 0, 35)
 SKYSPAMMING.Font = Enum.Font.Cartoon
 SKYSPAMMING.Text = "Skybox Spam"
