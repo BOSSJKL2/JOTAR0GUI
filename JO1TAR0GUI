@@ -438,6 +438,21 @@ TOADROAD.TextWrapped = true
 TOADROAD.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://pastebin.com/raw/yRwAAy77"))()
 end)
+JUMPSCARE.Parent = Frame
+JUMPSCARE.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+JUMPSCARE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JUMPSCARE.BorderSizePixel = 2
+JUMPSCARE.Position = UDim2.new(1, 0, 0.09, 0)
+JUMPSCARE.Size = UDim2.new(0, 170, 0, 35)
+JUMPSCARE.Font = Enum.Font.Cartoon
+JUMPSCARE.Text = "Jumpscare"
+JUMPSCARE.TextColor3 = Color3.fromRGB(0, 0, 0)
+JUMPSCARE.TextScaled = true
+JUMPSCARE.TextSize = 500
+JUMPSCARE.TextWrapped = true
+JUMPSCARE.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/hC13xQ9s"))()
+end)
 
 -- Scripts :
 
@@ -485,6 +500,37 @@ end
 coroutine.wrap(QFCS_fake_script)()
 local function PKIPWI_fake_script() -- TOADROAD.LocalScript 
 	local script = Instance.new('LocalScript', TOADROAD)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- JUMPSCARE.LocalScript 
+	local script = Instance.new('LocalScript', JUMPSCARE)
 
 	while wait() do
 		for i = 0,255,5 do
