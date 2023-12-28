@@ -19,6 +19,9 @@ local Music2 = Instance.new("TextButton")
 local ADMIN3 = Instance.new("TextButton")
 local Decal3 = Instance.new("TextButton")
 local Music3 = Instance.new("TextButton")
+local ADMIN4 = Instance.new("TextButton")
+local Decal4 = Instance.new("TextButton")
+local Music4 = Instance.new("TextButton")
 
 --Properties:
 
@@ -370,6 +373,51 @@ wait(0.2)
 Music3.Text = "Click AGAIN"
 wait(0.5)
 Music3.Text = "Server Destroyer Old"
+end)
+ADMIN4.Parent = Frame
+ADMIN4.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+ADMIN4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ADMIN4.BorderSizePixel = 2
+ADMIN4.Position = UDim2.new(0, 0, 0.67, 0)
+ADMIN4.Size = UDim2.new(0, 110, 0, 40)
+ADMIN4.Font = Enum.Font.Cartoon
+ADMIN4.Text = "Map 1"
+ADMIN4.TextColor3 = Color3.fromRGB(0, 0, 0)
+ADMIN4.TextScaled = true
+ADMIN4.TextSize = 500
+ADMIN4.TextWrapped = true
+ADMIN4.MouseButton1Down:connect(function()
+
+end)
+Decal4.Parent = Frame
+Decal4.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+Decal4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Decal4.BorderSizePixel = 2
+Decal4.Position = UDim2.new(0.34, 0, 0.67, 0)
+Decal4.Size = UDim2.new(0, 110, 0, 40)
+Decal4.Font = Enum.Font.Cartoon
+Decal4.Text = "Map 2"
+Decal4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Decal4.TextScaled = true
+Decal4.TextSize = 500
+Decal4.TextWrapped = true
+Decal4.MouseButton1Down:connect(function()
+
+end)
+Music4.Parent = Frame
+Music4.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+Music4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Music4.BorderSizePixel = 2
+Music4.Position = UDim2.new(0.67, 0, 0.67, 0)
+Music4.Size = UDim2.new(0, 110, 0, 40)
+Music4.Font = Enum.Font.Cartoon
+Music4.Text = "Server Destroyer New"
+Music4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Music4.TextScaled = true
+Music4.TextSize = 500
+Music4.TextWrapped = true
+Music4.MouseButton1Down:connect(function()
+
 end)
 
 -- Scripts :
