@@ -22,6 +22,8 @@ local Music3 = Instance.new("TextButton")
 local ADMIN4 = Instance.new("TextButton")
 local Decal4 = Instance.new("TextButton")
 local Music4 = Instance.new("TextButton")
+local TOADROAD = Instance.new("TextButton")
+local JUMPSCARE = Instance.new("TextButton")
 
 --Properties:
 
@@ -387,7 +389,7 @@ ADMIN4.TextScaled = true
 ADMIN4.TextSize = 500
 ADMIN4.TextWrapped = true
 ADMIN4.MouseButton1Down:connect(function()
-
+game:GetService("TeleportService"):Teleport(15152109142)
 end)
 Decal4.Parent = Frame
 Decal4.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
@@ -402,7 +404,7 @@ Decal4.TextScaled = true
 Decal4.TextSize = 500
 Decal4.TextWrapped = true
 Decal4.MouseButton1Down:connect(function()
-
+game:GetService("TeleportService"):Teleport(12476784915)
 end)
 Music4.Parent = Frame
 Music4.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
@@ -411,12 +413,29 @@ Music4.BorderSizePixel = 2
 Music4.Position = UDim2.new(0.67, 0, 0.73, 0)
 Music4.Size = UDim2.new(0, 110, 0, 40)
 Music4.Font = Enum.Font.Cartoon
-Music4.Text = "Server Destroyer New"
+Music4.Text = "??????????????????????????????????"
 Music4.TextColor3 = Color3.fromRGB(0, 0, 0)
 Music4.TextScaled = true
 Music4.TextSize = 500
 Music4.TextWrapped = true
 Music4.MouseButton1Down:connect(function()
+Music4.Text = "IDK WHAT IS THIS"
+wait(1)
+Music4.Text = "??????????????????????????????????"
+end)
+TOADROAD.Parent = Frame
+TOADROAD.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+TOADROAD.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TOADROAD.BorderSizePixel = 2
+TOADROAD.Position = UDim2.new(0, 0, 0, 1)
+TOADROAD.Size = UDim2.new(0, 110, 0, 40)
+TOADROAD.Font = Enum.Font.Cartoon
+TOADROAD.Text = "Toadroast"
+TOADROAD.TextColor3 = Color3.fromRGB(0, 0, 0)
+TOADROAD.TextScaled = true
+TOADROAD.TextSize = 500
+TOADROAD.TextWrapped = true
+TOADROAD.MouseButton1Down:connect(function()
 
 end)
 
