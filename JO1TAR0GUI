@@ -27,6 +27,8 @@ local JUMPSCARE = Instance.new("TextButton")
 local SKYSPAMMING = Instance.new("TextButton")
 local MESSAGE = Instance.new("TextButton")
 local SKYK00P = Instance.new("TextButton")
+local ANTILEAVE = Instance.new("TextButton")
+local SKYC00L = Instance.new("TextButton")
 
 --Properties:
 
@@ -560,7 +562,47 @@ s = Instance.new("Sky")
                 s.Parent = game.Lighting
 wait()
 end)
-
+ANTILEAVE.Parent = Frame
+ANTILEAVE.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+ANTILEAVE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ANTILEAVE.BorderSizePixel = 2
+ANTILEAVE.Position = UDim2.new(-0.43, 0, 0.45, 0)
+ANTILEAVE.Size = UDim2.new(0, 170, 0, 35)
+ANTILEAVE.Font = Enum.Font.Cartoon
+ANTILEAVE.Text = "Anti-Leave"
+ANTILEAVE.TextColor3 = Color3.fromRGB(0, 0, 0)
+ANTILEAVE.TextScaled = true
+ANTILEAVE.TextSize = 500
+ANTILEAVE.TextWrapped = true
+ANTILEAVE.MouseButton1Down:connect(function()
+ANTILEAVE.Text = "ERORR"
+wait(0.5)
+ANTILEAVE.Text = "Anti-Leave"
+end)
+SKYC00L.Parent = Frame
+SKYC00L.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+SKYC00L.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SKYC00L.BorderSizePixel = 2
+SKYC00L.Position = UDim2.new(-0.43, 0, 0.60, 0)
+SKYC00L.Size = UDim2.new(0, 170, 0, 35)
+SKYC00L.Font = Enum.Font.Cartoon
+SKYC00L.Text = "c00lkidd sky"
+SKYC00L.TextColor3 = Color3.fromRGB(0, 0, 0)
+SKYC00L.TextScaled = true
+SKYC00L.TextSize = 500
+SKYC00L.TextWrapped = true
+SKYC00L.MouseButton1Down:connect(function()
+s = Instance.new("Sky")
+		s.Name = "SKY"
+		s.SkyboxBk = "rbxassetid://433517918"
+		s.SkyboxDn = "rbxassetid://433517918"
+		s.SkyboxFt = "rbxassetid://433517918"
+		s.SkyboxLf = "rbxassetid://433517918"
+		s.SkyboxRt = "rbxassetid://433517918"
+                s.SkyboxUp = "rbxassetid://433517918"
+                s.Parent = game.Lighting
+wait()
+end)
 -- Scripts :
 
 local function QFCS_fake_script() -- Frame.Dragify 
@@ -731,6 +773,68 @@ end
 coroutine.wrap(PKIPWI_fake_script)()
 local function PKIPWI_fake_script() -- SKYK00P.LocalScript 
 	local script = Instance.new('LocalScript', SKYK00P)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- ANTILEAVE.LocalScript 
+	local script = Instance.new('LocalScript', ANTILEAVE)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- SKYK00P.LocalScript 
+	local script = Instance.new('LocalScript', SKYC00L)
 
 	while wait() do
 		for i = 0,255,5 do
