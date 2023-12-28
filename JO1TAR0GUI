@@ -459,7 +459,7 @@ for i,v in pairs(game.Players:GetPlayers()) do
 				newgui.Name = "k00p's Jumpscare"
 				local newimage = Instance.new("ImageLabel",newgui)
 				newimage.Image = "rbxassetid://15777105027"
-				newimage.Size = UDim2.new(0,750,0,345)
+				newimage.Size = UDim2.new(0,775,0,345)
                                
                                 newimage.BackgroundTransparency = 1
                                 local m = Instance.new("Hint", game.workspace)
