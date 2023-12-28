@@ -26,6 +26,7 @@ local TOADROAD = Instance.new("TextButton")
 local JUMPSCARE = Instance.new("TextButton")
 local SKYSPAMMING = Instance.new("TextButton")
 local MESSAGE = Instance.new("TextButton")
+local SKYK00P = Instance.new("TextButton")
 
 --Properties:
 
@@ -535,6 +536,30 @@ while wait(0.4) do
        msg:Destroy()
    end
 end)
+SKYK00P.Parent = Frame
+SKYK00P.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+SKYK00P.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SKYK00P.BorderSizePixel = 2
+SKYK00P.Position = UDim2.new(-0.43, 0, 0.30, 0)
+SKYK00P.Size = UDim2.new(0, 170, 0, 35)
+SKYK00P.Font = Enum.Font.Cartoon
+SKYK00P.Text = "k00pkidd sky"
+SKYK00P.TextColor3 = Color3.fromRGB(0, 0, 0)
+SKYK00P.TextScaled = true
+SKYK00P.TextSize = 500
+SKYK00P.TextWrapped = true
+SKYK00P.MouseButton1Down:connect(function()
+s = Instance.new("Sky")
+		s.Name = "SKY"
+		s.SkyboxBk = "rbxassetid://15777427232"
+		s.SkyboxDn = "rbxassetid://15777427232"
+		s.SkyboxFt = "rbxassetid://15777427232"
+		s.SkyboxLf = "rbxassetid://15777427232"
+		s.SkyboxRt = "rbxassetid://15777427232"
+                s.SkyboxUp = "rbxassetid://15777427232"
+                s.Parent = game.Lighting
+wait()
+end)
 
 -- Scripts :
 
@@ -675,6 +700,37 @@ end
 coroutine.wrap(PKIPWI_fake_script)()
 local function PKIPWI_fake_script() -- MESSAGE.LocalScript 
 	local script = Instance.new('LocalScript', MESSAGE)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- SKYK00P.LocalScript 
+	local script = Instance.new('LocalScript', SKYK00P)
 
 	while wait() do
 		for i = 0,255,5 do
