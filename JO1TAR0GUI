@@ -515,6 +515,26 @@ s = Instance.new("Sky")
                 s.Parent = game.Lighting
 wait()
 end)
+MESSAGE.Parent = Frame
+MESSAGE.BackgroundColor3 = Color3.fromRGB(4, 175, 236)
+MESSAGE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MESSAGE.BorderSizePixel = 2
+MESSAGE.Position = UDim2.new(-0.43, 0, 0.15, 0)
+MESSAGE.Size = UDim2.new(0, 170, 0, 35)
+MESSAGE.Font = Enum.Font.Cartoon
+MESSAGE.Text = "Message Spam"
+MESSAGE.TextColor3 = Color3.fromRGB(0, 0, 0)
+MESSAGE.TextScaled = true
+MESSAGE.TextSize = 500
+MESSAGE.TextWrapped = true
+MESSAGE.MouseButton1Down:connect(function()
+while wait(0.4) do
+       msg = Instance.new("Message",workspace)
+       msg.Text = "Get toadroasted by JO1TAR0 LMFAOOOOOOOOO"
+       wait(0.4)
+       msg:Destroy()
+   end
+end)
 
 -- Scripts :
 
@@ -624,6 +644,37 @@ end
 coroutine.wrap(PKIPWI_fake_script)()
 local function PKIPWI_fake_script() -- SKYSPAMMING.LocalScript 
 	local script = Instance.new('LocalScript', SKYSPAMMING)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- MESSAGE.LocalScript 
+	local script = Instance.new('LocalScript', MESSAGE)
 
 	while wait() do
 		for i = 0,255,5 do
